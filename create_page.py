@@ -22,7 +22,7 @@ def read_assets() -> list[MyAssetData]:
     
     pdfs = [os.path.splitext(f)[0] for f in listdir(assets_path) if os.path.splitext(f)[1] == ".pdf"]
     # Replace '[your-username]' with your actual GitHub username
-    return [MyAssetData(href=f"https://[yomukana].github.io/assets/{filename}.pdf", view_name=filename) for filename in pdfs]
+    return [MyAssetData(href=f"https://yomukana.github.io/assets/{filename}.pdf", view_name=filename) for filename in pdfs]
 
 def create_page() -> None:
     # Set your website title here
